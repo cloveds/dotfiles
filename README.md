@@ -2,7 +2,7 @@
 
 # ~/.vimrc
 
-`sudo apt install nodejs npm vim`
+`sudo apt install nodejs npm vim curl`
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
