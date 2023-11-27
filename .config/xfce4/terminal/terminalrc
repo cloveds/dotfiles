@@ -30,3 +30,5 @@ MiscRightClickAction=TERMINAL_RIGHT_CLICK_ACTION_CONTEXT_MENU
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 FontName=Monospace 14
+ColorBackground=#242424242424
+ColorForeground=#ffffffffffff
