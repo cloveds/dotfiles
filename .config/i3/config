@@ -190,5 +190,8 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 	position top
+	colors {
+		background #282c34
+	}
 }
 gaps inner 10px
