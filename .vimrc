@@ -8,6 +8,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tribela/vim-transparent'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 call plug#end()
+set nobackup
+set nowritebackup
+set signcolumn=yes
+set updatetime=300
 set number
 set autoindent
 set tabstop=4
