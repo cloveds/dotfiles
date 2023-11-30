@@ -20,3 +20,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 `sudo apt install xorg i3`
 
 # ~/.zshrc
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
