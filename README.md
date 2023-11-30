@@ -18,3 +18,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ## i3/config
 
 `sudo apt install xorg i3`
+
+# ~/.zshrc
