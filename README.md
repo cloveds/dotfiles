@@ -15,7 +15,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 `sudo apt install neovim npm nodejs curl`
 
-`echo 'alias vi="nvim"'' >> ~/.zshrc`
+`echo 'alias vi="nvim"' >> ~/.zshrc`
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
