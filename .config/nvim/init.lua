@@ -27,6 +27,7 @@ set relativenumber
 set background=dark
 set termguicolors
 colorscheme one
+set guicursor=i:block
 set cursorlineopt=number
 hi LineNr ctermfg=NONE guibg=NONE guifg=#D3D3D3
 let g:pear_tree_smart_openers = 1
