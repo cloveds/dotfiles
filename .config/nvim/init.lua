@@ -19,18 +19,20 @@ vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.smarttab = true
 vim.o.autoindent = true	
-vim.o.guifont = '*'
 vim.o.softtabstop = 4
 vim.o.encoding = 'utf8'
 vim.o.relativenumber= true
 vim.o.background = 'dark'
 vim.o.termguicolors = true
 vim.cmd[[
+	set guifont=*
 	colorscheme one
 	set guicursor=i:block
 	set cursorlineopt=number
+	set laststatus=0 ruler
 	hi LineNr ctermfg=NONE guibg=NONE guifg=#D3D3D3
 ]]
+vim.o.showtabline = 0
 vim.g.pear_tree_smart_openers = 1
 vim.g.pear_tree_smart_closers = 1
 vim.g.pear_tree_smart_backspace = 1
