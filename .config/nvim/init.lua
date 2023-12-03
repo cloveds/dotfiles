@@ -25,7 +25,11 @@ vim.o.relativenumber= true
 vim.o.background = 'dark'
 vim.o.termguicolors = true
 vim.cmd[[
-	set guifont=*
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction	
+set guifont=*
 	colorscheme one
 	set guicursor=i:block
 	set cursorlineopt=number
