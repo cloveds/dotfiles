@@ -6,9 +6,9 @@
 
 `sudo apt install neovim npm nodejs curl`
 
-`echo 'alias vi="nvim"' >> ~/.zshrc`
+`echo 'alias vi="nvim"' >> ~/.bashrc`
 
-`echo 'alias vim="nvim"' >> ~/.zshrc`
+`echo 'alias vim="nvim"' >> ~/.bashrc`
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -22,11 +22,3 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ## i3/config
 
 `sudo apt install xorg i3`
-
-# ~/.zshrc
-
-`sudo apt install zsh`
-
-`chsh -s $(which zsh)`
-
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
