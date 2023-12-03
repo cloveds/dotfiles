@@ -34,7 +34,7 @@ function! CheckBackspace() abort
 endfunction	
 set nocompatible
 set guifont=*
-colorscheme one
+colorscheme jellybeans
 set guicursor=i:block
 set cursorlineopt=number
 set laststatus=0 ruler
