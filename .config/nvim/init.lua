@@ -31,6 +31,11 @@ vim.cmd[[
 	set cursorlineopt=number
 	set laststatus=0 ruler
 	hi LineNr ctermfg=NONE guibg=NONE guifg=#D3D3D3
+	inoremap <silent><expr> <TAB>
+      	\ coc#pum#visible() ? coc#pum#next(1) :
+      	\ CheckBackspace() ? "\<Tab>" :
+      	\ coc#refresh()
+	inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 ]]
 vim.o.showtabline = 0
 vim.g.pear_tree_smart_openers = 1
