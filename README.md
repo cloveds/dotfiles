@@ -17,7 +17,11 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 ## xfce4/terminal/terminalrc
 
-`sudo apt install xfce4-terminal`
+`sudo apt install xfce4-terminal unzip`
+
+[nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CommitMono.zip)
+
+`unzip ./Downloads/CommitMono.zip -d ~/.local/share/fonts`
 
 ## i3/config
 
