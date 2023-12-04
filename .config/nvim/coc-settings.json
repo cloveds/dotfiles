@@ -1,3 +1,9 @@
 {
 	"suggest.noselect": true,
+	"diagnostic.checkCurrentLine": true,
+	"rust-analyzer.enable": true,
+	"coc.preferences.formatOnSave": true,
+	"diagnostic.enableMessage": "always",
+	"diagnostic.virtualTextCurrentLineOnly": false,
+	"rust-analyzer.inlayHints.typeHints.enable": true,
 }
