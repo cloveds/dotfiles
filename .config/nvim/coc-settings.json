@@ -1,7 +1,6 @@
 {
 	"suggest.noselect": true,
 	"diagnostic.checkCurrentLine": true,
-	"coc.preferences.formatOnSave": true,
 	"diagnostic.enableMessage": "always",
 	"diagnostic.virtualTextCurrentLineOnly": false,
 }
