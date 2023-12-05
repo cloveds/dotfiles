@@ -13,11 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ## xfce4/terminal/terminalrc
 
-`sudo apt install xfce4-terminal unzip`
-
-[nerd font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/CommitMono.zip)
-
-`unzip ./Downloads/CommitMono.zip -d ~/.local/share/fonts`
+`sudo apt install xfce4-terminal`
 
 ## i3/config
 
