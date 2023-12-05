@@ -87,5 +87,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bar {
 	i3bar_command i3bar --transparency
+	status_command i3status
+	colors {
+		background #00000000
+	}
 }
 gaps inner 5px
