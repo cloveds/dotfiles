@@ -2,7 +2,6 @@ set $mod Mod4
 font pango:monospace 8
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-exec --no-startup-id xsetroot -solid "#282c34"
 exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -87,10 +86,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 bar {
-        status_command i3status
-		colors {
-			background #282c34
-		}
+	i3bar_command i3bar --transparency
 }
 gaps inner 5px
-
