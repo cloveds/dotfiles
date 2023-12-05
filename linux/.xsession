@@ -1,6 +1,6 @@
 #!/bin/bash
 
-feh --bg-scale ~/Downloads/bg.jpeg
+feh --bg-scale ~/Downloads/php7KfFOg.jpeg
 
 compton -b
 
