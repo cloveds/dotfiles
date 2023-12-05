@@ -1,19 +1,15 @@
 # Prerequisites
 
-# ~/.config/
+# ~/.vimrc
 
-## nvim
-
-`sudo apt install neovim npm nodejs curl`
-
-`echo 'alias vi="nvim"' >> ~/.bashrc`
-
-`echo 'alias vim="nvim"' >> ~/.bashrc`
+`sudo apt install vim npm nodejs curl`
 
 ```bash
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+# ~/.config/
 
 ## xfce4/terminal/terminalrc
 
