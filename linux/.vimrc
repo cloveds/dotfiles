@@ -7,9 +7,6 @@ Plug 'https://github.com/rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'christianchiarulli/nvcode-color-schemes.vim'
-Plug 'nvim-tree/nvim-web-devicons'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 call plug#end()
 set nobackup
