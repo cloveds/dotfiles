@@ -1,0 +1,6 @@
+{
+	"suggest.noselect": true,
+	"diagnostic.checkCurrentLine": true,
+	"diagnostic.enableMessage": "always",
+	"diagnostic.virtualTextCurrentLineOnly": false,
+}
