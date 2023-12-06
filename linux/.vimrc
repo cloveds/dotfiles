@@ -7,6 +7,9 @@ Plug 'https://github.com/rust-lang/rust.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'christianchiarulli/nvcode-color-schemes.vim'
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 call plug#end()
 set nobackup
@@ -22,14 +25,14 @@ set smarttab
 set autoindent
 set softtabstop=4
 set encoding=utf8
-set termguicolors
 set background=dark
+set termguicolors
 syntax enable
-colorscheme one
 filetype plugin indent on
 set nocompatible
 set guifont=*
 set showtabline=0
+colorscheme onehalfdark 
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
