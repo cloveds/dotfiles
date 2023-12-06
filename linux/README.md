@@ -13,7 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 `sudo apt install feh compton`
 
-[background](https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/thematedkid/php7KfFOg.jpeg)
+[background](https://www.colorhexa.com/282c34.png)
 
 #### ~/.config/xfce4/terminal/terminalrc
 
