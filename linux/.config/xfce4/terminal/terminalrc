@@ -31,7 +31,6 @@ ScrollingBar=TERMINAL_SCROLLBAR_NONE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.000000
 TitleMode=TERMINAL_TITLE_HIDE
-FontName=Monospace 14
 ColorBackground=#282c34
 ColorForeground=#ffffffffffff
 ColorBold=#dcdfe4
