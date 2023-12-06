@@ -13,7 +13,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 `sudo apt install feh compton`
 
-[background](https://www.google.com/search?sca_esv=588105669&sxsrf=AM9HkKmIqoEfxshY9ZGZDiRJCinPgP_okw:1701806560124&q=cartoon+forest+wallpaper&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiJ-ve7i_mCAxWfk4kEHXCHAV4Q0pQJegQIDRAB&biw=1361&bih=664&dpr=2#imgrc=AckT9mzdYRge-M)
+[background](https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/thematedkid/php7KfFOg.jpeg)
 
 ### ~/.config/
 
