@@ -7,7 +7,6 @@ Plug 'https://github.com/tmsvg/pear-tree'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/rust-lang/rust.vim'
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
-Plug 'sheerun/vim-polyglot'
 Plug 'tribela/vim-transparent'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 vim.call('plug#end')
@@ -33,12 +32,12 @@ vim.cmd[[
 set guicursor=i:block
 syntax enable
 filetype plugin indent on
-colorscheme onehalfdark 
+set background=dark
+colorscheme carbonized-dark
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-hi LineNr ctermfg=NONE guibg=NONE guifg=#D3D3D3
 inoremap <silent><expr> <TAB>
     \ coc#pum#visible() ? coc#pum#next(1) :
     \ CheckBackspace() ? "\<Tab>" :
