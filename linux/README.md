@@ -2,7 +2,7 @@
 
 #### ~/.config/nvim
 
-[Neovim](https://github.com/neovim/neovim-releases/releases)
+`cargo install bob-nvim`
 
 `sudo apt install npm nodejs curl`
 
