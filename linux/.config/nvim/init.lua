@@ -1,5 +1,6 @@
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
+Plug 'preservim/nerdtree'
 Plug('fatih/vim-go', {['do'] = 'GoUpdateBinaries' })
 Plug('darrikonn/vim-gofmt', {['do'] = 'GoUpdateBinaries' })
 Plug 'https://github.com/tmsvg/pear-tree'
@@ -26,7 +27,6 @@ vim.o.softtabstop = 4
 vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.o.encoding = "utf-8"
-vim.o.guifont = "*"
 vim.o.compatible = false
 vim.o.showtabline = 0
 vim.cmd[[
@@ -47,4 +47,10 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
 let g:pear_tree_smart_backspace = 1
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+autocmd VimEnter * NERDTree | wincmd p
+let g:NERDTreeWinPos = "left"
 ]]
