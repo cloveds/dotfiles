@@ -2,9 +2,7 @@
 
 #### ~/.config/nvim
 
-`cargo install bob-nvim`
-
-`sudo apt install npm nodejs curl`
+`sudo apt install npm nodejs curl ninja-build gettext cmake unzip curl`
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
