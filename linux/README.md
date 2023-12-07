@@ -2,7 +2,9 @@
 
 #### ~/.config/nvim
 
-`sudo apt install neovim npm nodejs curl`
+[Neovim](https://github.com/neovim/neovim-releases/releases)
+
+`sudo apt install npm nodejs curl`
 
 ```bash
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
