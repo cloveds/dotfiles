@@ -1,6 +1,4 @@
 {
 	"suggest.noselect": true,
-	"diagnostic.checkCurrentLine": true,
-	"diagnostic.enableMessage": "always",
-	"diagnostic.virtualTextCurrentLineOnly": false,
+	"diagnostic.highlightPriority": 0
 }
