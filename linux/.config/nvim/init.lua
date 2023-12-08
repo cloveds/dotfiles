@@ -7,7 +7,6 @@ Plug 'https://github.com/tmsvg/pear-tree'
 Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/rust-lang/rust.vim'
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
-Plug 'tribela/vim-transparent'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
@@ -71,7 +70,6 @@ vim.o.background = "dark"
 vim.o.termguicolors = true
 vim.o.encoding = "utf-8"
 vim.o.compatible = false
---vim.o.showtabline = 0
 vim.o.showmode = false
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "rust", "python", "bash" },
