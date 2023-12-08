@@ -1,5 +1,11 @@
 # Prerequisites
 
+`sudo apt install unzip`
+
+[NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip)
+
+`unzip ./Downloads/JetBrainsMono.zip -d ~/.local/share/fonts`
+
 #### autostart.sh
 
 `chmod 755 autostart.sh`
