@@ -1,5 +1,9 @@
 # Prerequisites
 
+#### autostart.sh
+
+`chmod 755 autostart.sh`
+
 #### ~/.config/nvim
 
 `sudo apt install npm nodejs curl ninja-build gettext cmake unzip curl`
