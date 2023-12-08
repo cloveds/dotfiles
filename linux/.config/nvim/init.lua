@@ -8,6 +8,7 @@ Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/rust-lang/rust.vim'
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
 Plug 'tribela/vim-transparent'
+Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
 vim.call('plug#end')
 vim.o.backup = false
@@ -28,12 +29,19 @@ vim.o.termguicolors = true
 vim.o.encoding = "utf-8"
 vim.o.compatible = false
 vim.o.showtabline = 0
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "lua", "vim", "rust", "python", "bash" },
+  sync_install = false,
+  highlight = {
+    enable = true,
+  },
+}
 vim.cmd[[
 set guicursor=i:block
 syntax enable
 filetype plugin indent on
 set background=dark
-colorscheme carbonized-dark
+colorscheme onedark
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
