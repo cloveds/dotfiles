@@ -22,7 +22,7 @@
 
 ```bash
 echo 'alias vi="nvim"
-alias vim="nvim"' >> .bashrc`
+alias vim="nvim"' >> .bashrc
 ```
 
 ```bash
