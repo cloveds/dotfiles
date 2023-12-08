@@ -1,17 +1,19 @@
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
+Plug 'numToStr/Comment.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug('fatih/vim-go', {['do'] = 'GoUpdateBinaries' })
 Plug('darrikonn/vim-gofmt', {['do'] = 'GoUpdateBinaries' })
-Plug 'https://github.com/tmsvg/pear-tree'
-Plug 'https://github.com/tpope/vim-commentary'
 Plug 'https://github.com/rust-lang/rust.vim'
-Plug('neoclide/coc.nvim', {['branch'] = 'release'})
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
+Plug('neoclide/coc.nvim', {['branch'] = 'release'})
 Plug 'Mofiqul/dracula.nvim'
+Plug 'windwp/nvim-autopairs'
 vim.call('plug#end')
+require("nvim-autopairs").setup {}
+require('Comment').setup()
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -80,14 +82,13 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   },
 }
+vim.o.guicursor = "i:block"
+vim.cmd.syntax = "enable"
+vim.cmd.highlight({"CocFloating", "guibg=#44475A"})
+vim.cmd.highlight({"CocMenuSel", "guibg=#282A36"})
+vim.cmd.colorscheme("dracula")
 vim.cmd[[
-set guicursor=i:block
-syntax enable
-highlight CocFloating guibg=#44475A 
-highlight CocMenuSel guibg=#282A36
 filetype plugin indent on
-set background=dark
-colorscheme dracula
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
@@ -97,9 +98,6 @@ inoremap <silent><expr> <TAB>
     \ CheckBackspace() ? "\<Tab>" :
     \ coc#refresh()
 inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-let g:pear_tree_smart_openers = 1
-let g:pear_tree_smart_closers = 1
-let g:pear_tree_smart_backspace = 1
 nnoremap <leader>n :NvimTreeFocus<CR>
 nnoremap <C-n> :NvimTreeToggle<CR>
 ]]
