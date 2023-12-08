@@ -1,17 +1,22 @@
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 Plug 'numToStr/Comment.nvim'
-Plug 'nvim-tree/nvim-tree.lua'
 Plug('fatih/vim-go', {['do'] = 'GoUpdateBinaries' })
 Plug('darrikonn/vim-gofmt', {['do'] = 'GoUpdateBinaries' })
 Plug 'https://github.com/rust-lang/rust.vim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
 Plug 'Mofiqul/dracula.nvim'
 Plug 'windwp/nvim-autopairs'
 vim.call('plug#end')
+require("nvim-tree").setup({
+	view = {
+		side = "right"
+	}
+})
 require("nvim-autopairs").setup {}
 require('Comment').setup()
 require('lualine').setup {
@@ -54,7 +59,6 @@ require('lualine').setup {
   inactive_winbar = {},
   extensions = {}
 }
-require("nvim-tree").setup()
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.signcolumn = "yes"
@@ -74,6 +78,7 @@ vim.o.encoding = "utf-8"
 vim.o.compatible = false
 vim.o.showmode = false
 vim.o.cursorline = true
+vim.o.showtabline = 0
 vim.o.cursorlineopt = "number"
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "rust", "python", "bash" },
