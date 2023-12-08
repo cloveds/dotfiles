@@ -71,6 +71,8 @@ vim.o.termguicolors = true
 vim.o.encoding = "utf-8"
 vim.o.compatible = false
 vim.o.showmode = false
+vim.o.cursorline = true
+vim.o.cursorlineopt = "number"
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "lua", "vim", "rust", "python", "bash" },
   sync_install = false,
@@ -81,6 +83,8 @@ require'nvim-treesitter.configs'.setup {
 vim.cmd[[
 set guicursor=i:block
 syntax enable
+highlight CocFloating guibg=#44475A 
+highlight CocMenuSel guibg=#282A36
 filetype plugin indent on
 set background=dark
 colorscheme dracula
