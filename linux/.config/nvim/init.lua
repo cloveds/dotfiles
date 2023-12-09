@@ -9,7 +9,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = 'TSUpdate'})
 Plug('neoclide/coc.nvim', {['branch'] = 'release'})
-Plug 'Mofiqul/dracula.nvim'
+Plug "olimorris/onedarkpro.nvim"
 Plug 'windwp/nvim-autopairs'
 vim.call('plug#end')
 require("nvim-tree").setup({
@@ -22,7 +22,7 @@ require('Comment').setup()
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'dracula',
+    theme = 'onedark',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {
@@ -89,9 +89,9 @@ require'nvim-treesitter.configs'.setup {
 }
 vim.o.guicursor = "i:block"
 vim.cmd.syntax = "enable"
-vim.cmd.highlight({"CocFloating", "guibg=#44475A"})
-vim.cmd.highlight({"CocMenuSel", "guibg=#282A36"})
-vim.cmd.colorscheme("dracula")
+-- vim.cmd.highlight({"CocFloating", "guibg=#44475A"})
+-- vim.cmd.highlight({"CocMenuSel", "guibg=#282A36"})
+vim.cmd.colorscheme("onedark")
 vim.cmd[[
 filetype plugin indent on
 function! CheckBackspace() abort
@@ -106,3 +106,4 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 nnoremap <leader>n :NvimTreeFocus<CR>
 nnoremap <C-n> :NvimTreeToggle<CR>
 ]]
+
