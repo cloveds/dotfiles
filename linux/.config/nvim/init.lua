@@ -33,7 +33,6 @@ require('mason-lspconfig').setup({
 	  'gopls',
 	  'bashls',
 	  'pyright',
-	  'asm_lsp',
   },
   handlers = {
     lsp_zero.default_setup,
