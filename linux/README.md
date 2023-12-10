@@ -2,6 +2,8 @@
 
 `sudo apt install unzip`
 
+`sudo pacman -S unzip spice-vdagent firefox base-devel cmake ninja curl xfce4-terminal i3 xorg`
+
 [NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip)
 
 `unzip ./Downloads/JetBrainsMono.zip -d ~/.local/share/fonts`
@@ -13,6 +15,8 @@
 #### ~/.config/nvim
 
 `sudo apt install npm nodejs curl ninja-build gettext cmake unzip curl`
+
+`sudo pacman -S base-devel cmake unzip ninja curl`
 
 `git clone https://github.com/neovim/neovim`
 
