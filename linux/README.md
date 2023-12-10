@@ -2,7 +2,7 @@
 
 `sudo apt install unzip`
 
-`sudo pacman -S unzip spice-vdagent firefox base-devel cmake ninja curl xfce4-terminal i3 xorg`
+`sudo pacman -S unzip spice-vdagent firefox base-devel cmake ninja curl xfce4-terminal i3 xorg xorg-xinit`
 
 [NerdFont](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip)
 
