@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 
+sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip 
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
 mv ~/dotfiles/linux/.config ~/.config
