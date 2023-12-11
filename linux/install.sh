@@ -1,6 +1,6 @@
 #!/bin/bash
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip 
-unzip ~/.JetBrainsMono.zip -d ~/.local/share/fonts
+unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
 mv ~/dotfiles/linux/.config ~/.config
 mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
 mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
