@@ -2,7 +2,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b '
 setopt PROMPT_SUBST
-PROMPT='%F{green}%~%f %F{red}${vcs_info_msg_0_}%f%F{blue}'$'\Ue0b1%f '
+PROMPT='%F{green}%~%f %F{red}${vcs_info_msg_0_}%f%F{blue}'$'\Ue691%f '
 . "$HOME/.cargo/env"
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$HOME/bin:/usr/local/bin:$PATH
