@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr zsh zsh-syntax-highlighting -y
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
