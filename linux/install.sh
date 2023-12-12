@@ -4,6 +4,7 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsM
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
 mv ~/dotfiles/linux/.config ~/.config
 mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
+mkdir .local .local/share 
 mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
 chmod 755 autostart.sh
 git clone https://github.com/neovim/neovim
