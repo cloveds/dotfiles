@@ -3,7 +3,6 @@ sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent x
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir .local .local/share 
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
-mv ~/dotfiles/linux/.zshrc ~/.zshrc
 mv ~/dotfiles/linux/.config ~/.config
 mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
 mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
@@ -14,3 +13,5 @@ sudo make install
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf .zshrc
+mv ~/dotfiles/linux/.zshrc ~/.zshrc
