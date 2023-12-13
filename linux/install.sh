@@ -1,11 +1,12 @@
 #!/bin/sh
-sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr zsh zsh-syntax-highlighting -y
+sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 polybar firefox-esr zsh zsh-syntax-highlighting -y
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
-mkdir .local .local/share 
+mkdir .local .local/share
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
 mv ~/dotfiles/linux/.config ~/.config
 mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
 mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
+chmod +x ~/.config/polybar/launch.sh
 chmod 755 autostart.sh
 chmod 755 ~/dotfiles/linux/postinstall.sh
 git clone https://github.com/neovim/neovim
