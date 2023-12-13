@@ -8,7 +8,6 @@ mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
 mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
 chmod +x ~/.config/polybar/launch.sh
 chmod 755 autostart.sh
-chmod 755 ~/dotfiles/linux/postinstall.sh
 git clone https://github.com/neovim/neovim
 cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
