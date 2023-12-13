@@ -1,7 +1,6 @@
 vim.cmd.packadd('packer.nvim')
 
 return require('packer').startup(function(use)
-	use 'tribela/vim-transparent'
 	use 'wbthomason/packer.nvim'
 	use 'rust-lang/rust.vim'
 	use 'numToStr/Comment.nvim'
