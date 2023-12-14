@@ -20,5 +20,5 @@ vim.o.showtabline = 0
 vim.o.cursorlineopt = "number"
 vim.o.guicursor = "i:block"
 vim.cmd.syntax = "enable"
-vim.cmd.colorscheme("onedark")
+vim.cmd.colorscheme("dracula")
 vim.cmd[[filetype plugin indent on]]
