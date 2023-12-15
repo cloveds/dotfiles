@@ -4,7 +4,7 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'rust-lang/rust.vim'
 	use 'numToStr/Comment.nvim'
-	use 'Mofiqul/dracula.nvim'
+	use 'olimorris/onedarkpro.nvim'
 	use 'nvim-tree/nvim-web-devicons'
 	use 'windwp/nvim-autopairs'
 	use("nvim-treesitter/nvim-treesitter-context")
