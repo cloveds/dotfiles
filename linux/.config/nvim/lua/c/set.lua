@@ -1,7 +1,7 @@
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.signcolumn = "yes"
-vim.o.updatetime = 50
+vim.o.updatetime = 30
 vim.o.number = true
 vim.o.relativenumber = true
 vim.o.laststatus = 0
@@ -20,5 +20,5 @@ vim.o.showtabline = 0
 vim.o.cursorlineopt = "number"
 vim.o.guicursor = "i:block"
 vim.cmd.syntax = "enable"
-vim.cmd.colorscheme("dracula")
+vim.cmd.colorscheme("onedark")
 vim.cmd[[filetype plugin indent on]]
