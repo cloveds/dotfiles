@@ -4,9 +4,9 @@ sleep 2
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir .local .local/share
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
-mv ~/dotfiles/linux/.config ~/.config
-mv ~/dotfiles/linux/.xinitrc ~/.xinitrc
-mv ~/dotfiles/linux/autostart.sh ~/autostart.sh
+mv ~/dotfiles/.config ~/.config
+mv ~/dotfiles/.xinitrc ~/.xinitrc
+mv ~/dotfiles/autostart.sh ~/autostart.sh
 chmod 755 autostart.sh
 sleep 2
 git clone https://github.com/neovim/neovim
