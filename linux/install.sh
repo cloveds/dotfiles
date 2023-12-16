@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install unzip npm nodejs curl ninja-build gettext cmake spice-vdagent terminology xorg i3 firefox-esr -y
+sudo apt install feh compton unzip npm nodejs curl ninja-build gettext cmake spice-vdagent terminology xorg i3 firefox-esr -y
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 wget https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/thematedkid/php7KfFOg.jpeg
 sleep 1
