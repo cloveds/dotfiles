@@ -31,6 +31,11 @@ require('telescope').setup{
   pickers = {},
   extensions = {}
 }
+lsp.set_server_config({
+  on_init = function(client)
+    client.server_capabilities.semanticTokensProvider = nil
+  end,
+})
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
