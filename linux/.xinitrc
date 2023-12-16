@@ -1,3 +1,3 @@
 # ~/.xinitrc
-xfce4-terminal -e ./autostart.sh &
+terminology -e ./autostart.sh &
 exec i3
