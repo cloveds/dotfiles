@@ -17,7 +17,3 @@ cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
 sudo make install
 echo alias vi="nvim" >> ~/.bashrc
 echo alias vim="nvim" >> ~/.bashrc
-sleep 1
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-sleep 1
