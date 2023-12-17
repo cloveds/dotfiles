@@ -44,7 +44,7 @@ require('lazy').setup({
 
 })
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = {"c", "lua", "vim", "rust", "python", "bash", "go"},
+    ensure_installed = {"c", "lua", "vim", "rust", "python", "bash", "go", "typescript", "html", "css"},
     sync_install = false,
     auto_install = true,
     highlight = {enable = true}
@@ -52,7 +52,7 @@ require'nvim-treesitter.configs'.setup {
 local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
-lsp.ensure_installed({'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls'})
+lsp.ensure_installed({'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls', 'html', 'tsserver'})
 
 lsp.nvim_workspace()
 
