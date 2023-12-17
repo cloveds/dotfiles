@@ -15,6 +15,8 @@ require('lazy').setup({
         priority = 1000,
         config = function() vim.cmd [[colorscheme onedark]] end
     }, {'nvim-tree/nvim-web-devicons'}, {'windwp/nvim-autopairs'},
+    {'windwp/nvim-ts-autotag'},
+    {'brenoprata10/nvim-highlight-colors'},
     {"nvim-treesitter/nvim-treesitter-context"},
     {'darrikonn/vim-gofmt', cmd = 'GoUpdateBinaries'}, {'rust-lang/rust.vim'},
     {'numToStr/Comment.nvim'},
@@ -47,12 +49,13 @@ require'nvim-treesitter.configs'.setup {
     ensure_installed = {"c", "lua", "vim", "rust", "python", "bash", "go", "typescript", "html", "css"},
     sync_install = false,
     auto_install = true,
-    highlight = {enable = true}
+    highlight = {enable = true},
+    autotag = {enable = true}
 }
 local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
-lsp.ensure_installed({'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls', 'html', 'tsserver'})
+lsp.ensure_installed({'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls', 'html', 'tsserver', 'cssls'})
 
 lsp.nvim_workspace()
 
@@ -110,7 +113,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
-
+require('nvim-highlight-colors').setup {}
 vim.diagnostic.config({virtual_text = true})
 require("nvim-autopairs").setup {}
 require('Comment').setup()
@@ -120,6 +123,7 @@ vim.opt.writebackup = false
 vim.opt.signcolumn = "yes"
 vim.opt.updatetime = 50
 vim.opt.number = true
+vim.opt.termguicolors = true
 vim.opt.relativenumber = true
 vim.opt.laststatus = 0
 vim.opt.cmdheight = 1
