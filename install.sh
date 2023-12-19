@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install build-essential picom npm nodejs unzip bubblewrap curl luarocks ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev golang-go libffi-dev liblzma-dev -y
+sudo apt install build-essential neofetch picom npm nodejs unzip bubblewrap curl luarocks ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev golang-go libffi-dev liblzma-dev -y
 sleep 2
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 wget https://www.colorhexa.com/282c34.png
