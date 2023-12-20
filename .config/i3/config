@@ -1,5 +1,5 @@
 set $mod Mod4
-font pango:FiraCode Nerd Font 8
+font pango:FiraCode Nerd Font Mono 8
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
