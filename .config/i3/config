@@ -86,9 +86,8 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 bar {
-    i3bar_command i3bar -t
     colors {
-    background #00000000
+    background #282c34
     }
 }
 bindsym $mod+r mode "resize"
