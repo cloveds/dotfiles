@@ -15,8 +15,7 @@ require('lazy').setup({
         priority = 1000,
         config = function() vim.cmd [[colorscheme onedark]] end
     }, {'nvim-tree/nvim-web-devicons'}, {'windwp/nvim-autopairs'},
-    {'windwp/nvim-ts-autotag'},
-    {'brenoprata10/nvim-highlight-colors'},
+    {'windwp/nvim-ts-autotag'}, {'brenoprata10/nvim-highlight-colors'},
     {"nvim-treesitter/nvim-treesitter-context"},
     {'darrikonn/vim-gofmt', cmd = 'GoUpdateBinaries'}, {'rust-lang/rust.vim'},
     {'numToStr/Comment.nvim'},
@@ -42,11 +41,14 @@ require('lazy').setup({
             {'hrsh7th/cmp-nvim-lua'}, {'L3MON4D3/LuaSnip'},
             {'rafamadriz/friendly-snippets'}
         }
-    }
+    }, {'nvim-lualine/lualine.nvim'}
 
 })
 require'nvim-treesitter.configs'.setup {
-    ensure_installed = {"c", "lua", "vim", "rust", "python", "bash", "go", "typescript", "html", "css"},
+    ensure_installed = {
+        "c", "lua", "vim", "rust", "python", "bash", "go", "typescript", "html",
+        "css"
+    },
     sync_install = false,
     auto_install = true,
     highlight = {enable = true},
@@ -54,11 +56,11 @@ require'nvim-treesitter.configs'.setup {
 }
 local lsp = require("lsp-zero")
 lsp.preset("recommended")
-
-lsp.ensure_installed({'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls', 'html', 'tsserver', 'cssls'})
-
+lsp.ensure_installed({
+    'lua_ls', 'rust_analyzer', 'bashls', 'pyright', 'gopls', 'html', 'tsserver',
+    'cssls'
+})
 lsp.nvim_workspace()
-
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -73,7 +75,6 @@ require('telescope').setup {
     pickers = {},
     extensions = {}
 }
-
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
@@ -86,7 +87,6 @@ cmp_mappings['<Up>'] = nil
 cmp_mappings['<Down>'] = nil
 cmp_mappings['<Right>'] = nil
 lsp.setup_nvim_cmp({mapping = cmp_mappings})
-
 lsp.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {error = 'E', warn = 'W', hint = 'H', info = 'I'}
@@ -111,8 +111,75 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end,
                    opts)
 end)
-
 lsp.setup()
+local colors = {
+    blue = '#61AFEF',
+    green = '#98C379',
+    black = '#282c34',
+    white = '#ABB2BF',
+    red = '#E06C75',
+    violet = '#d183e8',
+    grey = '#3E4452'
+}
+
+local bubbles_theme = {
+    normal = {
+        a = {fg = colors.black, bg = colors.green},
+        b = {fg = colors.green, bg = colors.grey},
+        c = {fg = colors.black, bg = colors.black}
+    },
+
+    insert = {
+        a = {fg = colors.black, bg = colors.blue},
+        b = {fg = colors.blue, bg = colors.grey},
+        c = {fg = colors.black, bg = colors.black}
+
+    },
+    visual = {
+        a = {fg = colors.black, bg = colors.violet},
+        b = {fg = colors.violet, bg = colors.grey},
+        c = {fg = colors.black, bg = colors.black}
+    },
+    replace = {
+        a = {fg = colors.black, bg = colors.red},
+        b = {fg = colors.red, bg = colors.grey},
+        c = {fg = colors.black, bg = colors.black}
+    },
+
+    inactive = {
+        a = {fg = colors.white, bg = colors.black},
+        b = {fg = colors.white, bg = colors.black},
+        c = {fg = colors.black, bg = colors.black}
+    }
+}
+
+require('lualine').setup {
+    options = {
+        theme = bubbles_theme,
+        component_separators = '|',
+        section_separators = {left = '', right = ''}
+    },
+    sections = {
+        lualine_a = {{'mode', separator = {left = ''}, right_padding = 2}},
+        lualine_b = {'filename', 'branch'},
+        lualine_c = {'fileformat'},
+        lualine_x = {},
+        lualine_y = {'filetype', 'progress'},
+        lualine_z = {
+            {'location', separator = {right = ''}, left_padding = 2}
+        }
+    },
+    inactive_sections = {
+        lualine_a = {'filename'},
+        lualine_b = {},
+        lualine_c = {},
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {'location'}
+    },
+    tabline = {},
+    extensions = {}
+}
 require('nvim-highlight-colors').setup {}
 vim.diagnostic.config({virtual_text = true})
 require("nvim-autopairs").setup {}
@@ -125,8 +192,7 @@ vim.opt.updatetime = 50
 vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.relativenumber = true
-vim.opt.laststatus = 0
-vim.opt.cmdheight = 1
+vim.opt.cmdheight = 0
 vim.opt.autoindent = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
