@@ -10,7 +10,8 @@ mv ~/dotfiles/autostart.sh ~/autostart.sh
 chmod 755 autostart.sh
 sleep 2
 git clone https://github.com/neovim/neovim
-cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd neovim
+make
 sudo make install
 sleep 2
 luarocks install --server=https://luarocks.org/dev luaformatter
