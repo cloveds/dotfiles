@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt install build-essential neofetch npm nodejs unzip bubblewrap curl luarocks ninja-build gettext cmake spice-vdagent xfce4-terminal xorg i3 firefox-esr libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev golang-go libffi-dev liblzma-dev -y
+sudo zypper in hyprland xfce4-terminal git swaybg swww unzip wget curl build-devel neofetch xfce4-terminal cmake ninja gettext-tools gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch npm nodejs gcc-c++ lua54-luarocks spice-vdagent firefox
 sleep 2
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir .local .local/share
