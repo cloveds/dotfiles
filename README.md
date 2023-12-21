@@ -1,3 +1,3 @@
 # Prerequisites
 
-`sudo apt install git`
+`sudo zypper in git`
