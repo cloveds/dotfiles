@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo zypper in hyprland xfce4-terminal git swaybg swww unzip wget curl build-devel neofetch xfce4-terminal cmake ninja gettext-tools gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch npm nodejs gcc-c++ lua54-luarocks spice-vdagent firefox
+sudo zypper in hyprland xfce4-terminal git swaybg swww waybar unzip wget curl build-devel neofetch xfce4-terminal cmake ninja gettext-tools gcc automake bzip2 libbz2-devel xz xz-devel openssl-devel ncurses-devel readline-devel zlib-devel tk-devel libffi-devel sqlite3-devel gdbm-devel make findutils patch npm nodejs gcc-c++ lua54-luarocks spice-vdagent firefox
 sleep 2
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir .local .local/share
