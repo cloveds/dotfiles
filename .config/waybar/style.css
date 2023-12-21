@@ -1,0 +1,45 @@
+* {
+    border:        none;
+    border-radius: 0;
+    font-family:   "monospace";
+    font-size:     10px;
+    box-shadow:    none;
+    text-shadow:   none;
+    transition-duration: 0s;
+}
+
+window#waybar {
+    color: rgba(53, 185, 171, 1);
+    background-color: #282c34;
+}
+
+window#waybar.solo {
+    color: rgba(53, 185, 171, 1);
+}
+
+#workspaces {
+    margin: 0 5px;
+}
+
+#custom-scratchpad {
+    margin: 0px	5px;
+    padding: 0px 5px;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #ABB2BF;
+}
+
+#workspaces button.focused {
+    color: rgba(115, 186, 37, 1);
+}
+
+#workspaces button.visible {
+    color: #61AFEF;
+}
+
+#workspaces button.urgent {
+    color: rgba(33, 164, 223, 1);
+}
+
