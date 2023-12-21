@@ -19,6 +19,7 @@ sleep 2
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 cd ~/.pyenv && src/configure && make -C src
 sleep 1
+echo 'export WLR_NO_HARDWARE_CURSORS=1' >> ~/.bashrc
 echo alias vi="nvim" >> ~/.bashrc
 echo alias vim="nvim" >> ~/.bashrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
