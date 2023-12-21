@@ -4,6 +4,7 @@ sleep 2
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip
 mkdir .local .local/share
 unzip ~/JetBrainsMono.zip -d ~/.local/share/fonts
+rm -rf .config
 mv ~/dotfiles/.config ~/.config
 sleep 2
 git clone https://github.com/neovim/neovim
