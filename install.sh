@@ -18,8 +18,8 @@ sleep 2
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 cd ~/.pyenv && src/configure && make -C src
 sleep 1
-echo alias vi="nvim" >> ~/.bashrc
-echo alias vim="nvim" >> ~/.bashrc
+echo 'alias vi="nvim"' >> ~/.bashrc
+echo 'alias vim="nvim"' >> ~/.bashrc
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
 echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
 echo 'eval "$(pyenv init -)"' >> ~/.bashrc
